@@ -8,7 +8,7 @@ from django_jalali.db import models as jmodels
 
 class MorSh(models.Model):
 
-    class Status(models.Choices):
+    class Status(models.TextChoices):
         MELLI =  'M', 'کارت ملی'
         SHENASNAME = 'SH', 'شناسنامه'
 
@@ -18,7 +18,7 @@ class MorSh(models.Model):
 
     status = models.CharField(max_length=2,choices=Status.choices,default=Status.MELLI)
 
-    auther = models.ForeignKey(User,on_delete=SET_NULL,related_name='MorSh')
+    auther = models.ForeignKey(User,on_delete=models.CASCADE,related_name='MorSh')
 
     date_S = jmodels.jDateTimeField(auto_now_add=True)
 
