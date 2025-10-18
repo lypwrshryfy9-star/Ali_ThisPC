@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>main|{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% include 'patient/headers.html' %}
+    {% block content %}{% endblock %}
+    {% include 'patient/footer.html' %}
+</body>
+</html>
