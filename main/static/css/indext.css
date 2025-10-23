@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#header{
+    background-color: rgba(115, 0, 255, 0.7);
+    font-family: "B Davat";
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    height: 200px;
+    color: white;
+}
+
+#main .all{
+    border: 3px solid red;
+    background-color: rgba(255, 68, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 4px;
+
+}
